@@ -11,6 +11,18 @@ $currentDate = date("d.m.y");
 $currentDatelong = date("Dd.M.Y-h:iA");
 // --------------------------
 $sharexdir = "uploaded/";
+if($usessub == "true") {
+  $fulldomain = $subdomain.'.'.$domain;
+} else {
+  $fulldomain = $domain;
+};
+if($ssl == "true") {
+  $https = "s";
+} else if($ssl == "false") {
+  $https = "";
+} else {
+  $https = "";
+};
 function RandomString($length) {
     $keys = array_merge(range(0,9), range('a', 'z'));
 
@@ -19,7 +31,7 @@ function RandomString($length) {
         $key .= $keys[mt_rand(0, count($keys) - 1)];
     }
     return $key;
-}
+};
 
 if(isset($_POST['secret']))
 {
@@ -53,7 +65,7 @@ if(isset($_POST['secret']))
 else
 {
     echo 'No post data recieved';
-}
+};
         } else {
             echo 'Error file type not allowed or script error';
         };
