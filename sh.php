@@ -19,7 +19,7 @@ if($ssl == "true") {
   $https = "";
 } else {
   $https = "";
-}
+};
 $cwdir = getcwd();
 $folderPath = $cwdir.'/uploaded/';
 $file = glob($folderPath . '*');
