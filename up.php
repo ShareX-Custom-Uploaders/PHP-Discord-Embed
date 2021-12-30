@@ -2,7 +2,10 @@
 // CHANGE THIS WITH YOUR INFO
 // --------------------------
 $secret_key = ""; //Set this as your secret key, to prevent others uploading to your server.
-$domain_url = ""; //Add an S at the end of HTTP if you have a SSL certificate.
+$domain = "yourdomain.com";
+$usessub = "true/false";
+$subdomain = "sub";
+$ssl = "true"; // Change this only if you have a ssl cerdificate aka https
 $lengthofstring = 5; //Length of the file name
 $currentDate = date("d.m.y");
 $currentDatelong = date("Dd.M.Y-h:iA");
