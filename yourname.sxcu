@@ -1,0 +1,16 @@
+{
+    "Version": "13.6.1",
+    "Name": "Your name",
+    "DestinationType": "ImageUploader",
+    "RequestMethod": "POST",
+    "RequestURL": "https://yourdomain.com/up.php",
+    "Body": "MultipartFormData",
+    "FileFormName": "sharex",
+    "Arguments": {
+        "secret": "yoursecret"
+    },
+    "URL": "",
+    "ThumbnailURL": "",
+    "DeletionURL": "",
+    "ErrorMessage": ""
+}
